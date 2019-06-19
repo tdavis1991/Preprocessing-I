@@ -57,16 +57,20 @@ html, body {
 	height: 100%;
 }
 
-@border-box: 1px solid red;
+@border-line: 1px solid red;
 
 .container {
 	width: 800px;
 	margin: 0 auto;
+	border: @border-line;
 	
 	header {
-		border: @border-box;
-	}
-		nav {
+		border: @border-line;
+		width: 750px;
+		margin: 0 auto;
+		background-color: whitesmoke;
+
+			nav {
 			display: flex;
 			justify-content: flex-end;
 
@@ -81,7 +85,59 @@ html, body {
 			margin: 30px;
 		}
 
-		h1 {
-			font-size: 3rem;
+		.start {
+			width: 720px;
+			margin-left: 20px;
+
+			h1 {
+				font-size: 3rem;
+				margin-bottom: 15px;
+			}
+			
+			p {
+				font-size: 1.3rem;
+				border-bottom: 1px solid gray;
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+
+			#intro {
+				font-size: 1rem;
+				border-bottom: 0px;
+			}
+
+			button {
+				padding: 5px 15px;
+				font-size: 1.1rem;
+				background-color: gray;
+				color: white;
+				margin-bottom: 50px;
+			}
 		}
+	}
+
+	.bio {
+		margin: 20px;
+		display: flex;
+		justify-content: space-evenly;
+
+		.about {
+			width: 300px;
+			
+		}
+
+		.likes {
+			width: 300px;
+
+			p {
+				padding: 10px;
+				border: 1px solid black;
+			}
+		}
+
+		h3 {
+			font-size: 1.3rem;
+			margin-bottom: 10px;
+		}
+	}
 }
