@@ -201,3 +201,42 @@ body {
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
+.container .work {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 750px;
+}
+.container .work h3 {
+  font-size: 1.3rem;
+}
+.container .work .work-sec {
+  display: flex;
+  justify-items: flex-start;
+}
+.container .work .work-sec p {
+  font-size: 1.1rem;
+  margin: 0 20px;
+  padding: 10px 35px;
+}
+.container .work .work-sec .years {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container .work .job {
+  display: flex;
+  justify-items: flex-start;
+}
+.container .work .job p {
+  margin: 0 20px;
+  padding: 10px 35px 10px 0px;
+}
+.container .work .job .years {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container .work .two {
+  background-color: whitesmoke;
+}

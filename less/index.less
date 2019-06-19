@@ -71,18 +71,29 @@ html, body {
 		background-color: whitesmoke;
 
 			nav {
-			display: flex;
-			justify-content: flex-end;
+				display: flex;
+				justify-content: flex-end;
+				
+				@media(max-width: 500px) {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
 
-			a {
-				margin: 10px 20px;
-				color: black;
-				text-decoration: none;
+				}
+
+				a {
+					margin: 10px 20px;
+					color: black;
+					text-decoration: none;
+				}
 			}
 		}
 
 		img {
 			margin: 30px;
+			@media(max-width: 500px) {
+				display: none;
+			}
 		}
 
 		.start {
@@ -138,6 +149,56 @@ html, body {
 		h3 {
 			font-size: 1.3rem;
 			margin-bottom: 10px;
+		}
+	}
+
+	.work {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+		width: 750px;
+
+		h3 {
+			font-size: 1.3rem;
+		}
+
+		.work-sec {
+			display: flex;
+			justify-items: flex-start;
+			// margin: 0 auto;
+
+			p{
+				font-size: 1.1rem;
+				margin: 0 20px;
+				padding: 10px 35px;
+			}
+			.years {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+		}
+
+		.job {
+			display: flex;
+			// padding: 10px 0px;
+			justify-items: flex-start;
+			// margin: 0 auto;
+
+			p {
+				margin: 0 20px;
+				padding: 10px 35px 10px 0px;
+			}
+
+			.years {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+		}
+
+		.two {
+			background-color: whitesmoke;
 		}
 	}
 }
